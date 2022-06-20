@@ -1,0 +1,26 @@
+<!--<div [ngClass]="{'block': showForm,'hidden': !showForm}">-->
+<div>
+  <table class="table text-center">
+    <tr class="thead-dark">
+      <th>Rut</th>
+      <th>Nombre</th>
+      <th>Apellido</th>
+      <th>Edad</th>
+      <th>profesion</th>
+      <th class="" colspan="2">acciones</th>
+    </tr>
+    <tr *ngFor="let persona of informacion">
+      <td>{{persona.rut}}</td>
+      <td>{{persona.nombre}}</td>
+      <td>{{persona.apellido}}</td>
+      <td>{{persona.edad}}</td>
+      <td>{{persona.profesion}}</td>
+      <td>
+        <button class="btn btn-primary">seleccionar</button>
+      </td>
+      <td>
+        <button class="btn btn-danger" (click)="eliminar(persona.rut)">Eliminar</button>
+      </td>
+    </tr>
+  </table>
+</div>

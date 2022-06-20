@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <div>
+                <h1>Formulario</h1>
+            </div>
+            <form action="">
+                <div class="row form-group">
+                    <label for="rut" class="col-2">Rut</label>
+                    <div class="col-10">
+                        <input type="text" class="form-control" [(ngModel)]="rut" name="rut" id="rut">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label for="nombre" class="col-2">Nombre</label>
+                    <div class="col-10">
+                        <input type="text" class="form-control" [(ngModel)]="nombre" name="nombre" id="nombre">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label for="apellido" class="col-2">Apellido</label>
+                    <div class="col-10">
+                        <input type="text"  class="form-control" [(ngModel)]="apellido" name="apellido" id="apellido">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label for="edad" class="col-2">Edad</label>
+                    <div class="col-10">
+                        <input type="number" class="form-control" [(ngModel)]="edad" name="edad"  id="edad">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label for="profesion" class="col-2">Profesion</label>
+                    <div class="col-10">
+                        <input type="text" class="form-control" [(ngModel)]="profesion" name="profesion" id="profesion">
+
+                    </div>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-block" (click)="guardar()">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
